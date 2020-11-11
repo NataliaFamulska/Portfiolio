@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /*background-image: url("bg3-min.jpg");*/
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.rowdisplay{
+    display: flex;
+    flex-direction: row;
+}
+
+.stickyNav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 10;
+}
+
+.StickyNav_logo{
+    height: 120px;
+    width: auto;  
+    margin-right: 30%;
+}
+
+.stickyNav_list{
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.stickyNav_list--opt{
+    text-decoration: none;
+    color: black;
+    background: linear-gradient(0deg, rgba(191,236,239,1) 50%, rgba(255,255,255,0) 50%);
+}
+
+.--opt{
+    margin: 0.3rem;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.header_text{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: -0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+
+.header_descp{
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Lora', serif;
+}
+
+.me{
+    width: 13rem;
+    height: 14.2rem;
+    border: 5px solid black;
+    box-shadow: -30px -30px 0px 0px #88D3D1;
+}
+
+.sectIntro{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sectIntro_header{
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;  
+}
+
+.sectIntro_header--text{
+    margin-left: 1rem;
+    
+}
+
+.sectIntro_header--header{
+    background: linear-gradient(0deg, rgba(191,236,239,1) 50%, rgba(255,255,255,0) 50%);
+    font-size: 2.75rem;
+    font-weight: lighter;
+}
+
+.sectIntro_header--introName{
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+
+.sectIntro_intro{
+    width: 50%;
+    background-color: #E6FAFC;
+    margin-top: 1rem;
+    
+}
+
+.sectIntro_intro--text{
+    padding: 5rem 2rem 5rem 2rem;
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+

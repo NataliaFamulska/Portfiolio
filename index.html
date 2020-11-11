@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <nav class="stickyNav rowdisplay" id="nav">
+            <img src="logo2-min.png" alt="logo" class="StickyNav_logo">
+            <ul class="stickyNav_list  rowdisplay">
+                <li class="stickyNav_list--opt --opt"><a href="#home" class="stickyNav_list--opt">home</a></li>
+                <li class="stickyNav_list--opt --opt"><a href="#aboutme" class="stickyNav_list--opt">about me</a></li>
+                <li class="stickyNav_list--opt --opt"><a href="#myprojects" class="stickyNav_list--opt">my projects</a></li>
+            </ul>
+        </nav>
+    
+        <main id="home" class="header tile">
+    
+            <h1 class="header_text">Hi! My name is Natalia and <br> I'm 19 years old</h1>
+            <p class="header_descp">And this is my portfolio</p>
+    
+    
+        </main>
+    
+        <section id="aboutme" class="sectIntro tile rowdisplay">
+    
+            <div class="sectIntro_header rowdisplay">
+                <!--<img src="" alt="" class="me"> --> <div class="me">my photo soon</div>
+                <div class="displayrow sectIntro_header--text">
+                    <h2 class="sectIntro_header--header">about me</h2>
+                    <h3 class="sectIntro_header--introName">Natalia Krystyna <br> Famulska</h3>
+                </div>
+            </div>
+    
+            <div class="sectIntro_intro">
+                <p class="sectIntro_intro--text">
+                    I was born, and brought up in a village in Poland. But at the end of my IT High School I moved out to the town.
+                    In IT High School I learned a lot of useful things in web designing. I know basic of HTML, CSS, JavaScript, even PHP.
+                    Also, I had a few graphic's lesson. Rest of my knowledge about designing I obtain by myself.
+                    After School, I’d like to move into the Netherlands, studying and working there as a Designer.
+                </p>
+            </div>
+    
+        </section>
+    
+
+    <script>
+        var innW = window.innerWidth;
+        var innH = window.innerHeight;
+        var home = document.getElementById("home");
+        var aboutme =  document.getElementById("aboutme");
+
+        home.style.height = innH*0.8 + "px";
+        aboutme.style.height = innH + "px";
+
+        window.addEventListener('wheel', scrolling);
+
+        function scrolling(event){
+            var delta;
+            if (event.wheelDelta){
+                delta = event.wheelDelta;
+            }
+            else{
+                delta = -1 *event.deltaY;
+            }
+
+            if (delta < 0){
+                // down
+                window.scrollTo(0, 0)
+
+            }
+            else if (delta > 0){
+                // up
+                window.scrollTo(0, innH)
+
+
+    }
+}
+    </script>
+    
+</body>
+</html>
